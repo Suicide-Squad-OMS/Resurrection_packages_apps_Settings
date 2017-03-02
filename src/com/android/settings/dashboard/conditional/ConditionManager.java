@@ -91,10 +91,8 @@ public class ConditionManager {
                     Condition condition = createCondition(Class.forName(clz));
                     PersistableBundle bundle = PersistableBundle.restoreFromXml(parser);
                     if (DEBUG) Log.d(TAG, "Reading " + clz + " -- " + bundle);
-                    if (condition != null) {
-                        condition.restoreState(bundle);
-                        conditions.add(condition);
-                    }
+                    condition.restoreState(bundle);
+                    conditions.add(condition);
                     while (parser.getDepth() > depth) {
                         parser.next();
                     }
@@ -152,9 +150,7 @@ public class ConditionManager {
     private void addIfMissing(Class<? extends Condition> clz, ArrayList<Condition> conditions) {
         if (getCondition(clz, conditions) == null) {
             if (DEBUG) Log.d(TAG, "Adding missing " + clz.getName());
-            if (createCondition(clz) != null) {
-                conditions.add(createCondition(clz));
-            }
+            conditions.add(createCondition(clz));
         }
     }
 
@@ -176,7 +172,7 @@ public class ConditionManager {
         } else if (NightDisplayCondition.class == clz) {
             return new NightDisplayCondition(this);
         }
-        return null;
+        throw new RuntimeException("Unexpected Condition " + clz);
     }
 
     Context getContext() {
