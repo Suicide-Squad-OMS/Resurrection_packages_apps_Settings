@@ -21,6 +21,8 @@
     <!-- General -->
     <string name="ok">Okay</string>
     <string name="reset">Reset</string>
+    <string name="dlg_reset_rr">RR</string>
+    <string name="dlg_reset_android">Default</string>
     <string name="default_string">Default</string>
     <string name="add">Add</string>
     <string name="enabled">Enabled</string>
@@ -109,8 +111,8 @@
     <string name="fab_reset">Reset</string>
     <string name="fab_about">About RR-OS</string>
     <string name="fab_layout">Update layout</string>
-    <string name="fab_layout_update">Toggle marshmallow layout</string>
-    <string name="fab_layout_toggle">Toggle nougat layout</string>
+    <string name="fab_layout_update">Toggle classic layout</string>
+    <string name="fab_layout_toggle">Toggle tab layout</string>
     <string name="rr_reset_message">Reset all configurations to default values?</string>
     <string name="rr_reset_settings">Reset settings</string>
     <string name="rr_reset_yes">Yes</string>
@@ -684,6 +686,7 @@
     <string name="shortcuts_icon_presets">System icons</string>
     <string name="shortcuts_icon_custom">Gallery</string>
     <string name="shortcuts_icon_picker_choose_icon_title">Choose icon</string>
+    <string name="image_exceeds_max_allowed_size">Image must not exceed 512x512</string>
 
     <string name="lockscreen_shortcuts_category">Shortcuts</string>
     <string name="keyguard_torch_title">Lockscreen torch</string>
@@ -1048,6 +1051,8 @@
     <string name="volume_keys_control_ring_stream_summary_off">Volume keys control media volume</string>
     <string name="volume_answer_call_title">Answer call</string>
     <string name="volume_answer_call_summary">Answer incoming calls by pressing the volume buttons</string>
+    <string name="vol_up_disable_overlays_title">Disable theme overlays with volume up</string>
+    <string name="vol_up_disable_overlays_summary">During boot hold volume up button to disable all applied theme overlays</string>
 
     <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
 
@@ -1097,7 +1102,7 @@
     <string name="status_bar_am_pm_hidden">Hidden</string>
 
     <!-- Status bar - Battery -->
-    <string name="status_bar_battery_style_title">Battery status style</string>
+    <string name="status_bar_battery_style_title">Statusbar battery style</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
     <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
     <string name="status_bar_battery_style_circle">Circle</string>
@@ -1659,7 +1664,9 @@
     <string name="lavamp_solid_speed_title">Lava lamp speed</string>
     <string name="pulse_solid_units_count">Solid lines count</string>
     <string name="pulse_solid_units_opacity">Solid lines opacity</string>
+    <string name="pulse_fading_blocks_opacity">Fading blocks opacity</string>
     <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+    <string name="pulse_custom_buttons_opacity_title">Buttons opacity on Pulse</string>
     <string name="fling_lavalamp_color_from">Lava Lamp start color</string>
     <string name="fling_lavalamp_color_to">Lava Lamp end color</string>
 
@@ -1694,11 +1701,12 @@
     <string name="smartbar_button_animation_pixel_home_ripple">Pixel (Home button only) and Ripple</string>
     <string name="smartbar_factory_reset_title">Reset to stock</string>
     <string name="smartbar_factory_reset_confirm">Are you sure you want to reset Smartbar to stock settings?</string>
-    <string name="smartbar_ime_action_title">Input method actions</string>
-    <string name="smartbar_ime_action_summary">Set what buttons to show when a on-screen keyboard is showing</string>
+    <string name="smartbar_ime_action_title">Input method and media actions</string>
+    <string name="smartbar_ime_action_summary">Set what buttons to show when a on-screen keyboard is showing or music is playing</string>
     <string name="smartbar_ime_action_none">None</string>
     <string name="smartbar_ime_action_arrows">Input arrows</string>
     <string name="smartbar_ime_action_switcher">Keyboard switcher</string>
+    <string name="smartbar_ime_action_dynamic">Input/media arrows</string>
     <string name="smartbar_backup_current_config_title">Save profile</string>
     <string name="smartbar_restore_config_title">Restore profile</string>
     <string name="smartbar_config_name_edit_dialog_title">Smartbar profile name</string>
@@ -2042,7 +2050,7 @@
     <string name="lock_screen_weather_wind_color">Weather Wind</string>
     <string name="yes">YES</string>
 
-    <string name="status_bar_battery_style_tile_title">Custom battery tile style</string>
+    <string name="battery_tile_style_title">Battery tile style</string>
     <string name="status_bar_battery_style_tile_summary">Allow to set the same icon style chosen for the statusbar battery</string>
 
     <!-- Scrolling Animation Controls -->
@@ -2217,6 +2225,29 @@
     <string name="smartbar_doubletap_sleep_title">Double tap to sleep</string>
     <string name="smartbar_doubletap_sleep_summary">Double tap on navbar empty areas to switch off the screen</string>
 
+    <!-- Pixel Animation Duration -->
+    <string name="pixel_anim_title">Pixel navbar animation </string>
+    <string name="pixel_anim_summary">Customize various elements of pixel animation on navbar</string>
+    <string name="pixel_anim_warning">Customize various elements of pixel animation on navbar. WARNING! Changing default values can cause performance drop in animation.Proceed at your own risk</string>
+    <string name="pixel_anim_x_title">Horizontal duration</string>
+    <string name="pixel_anim_y_title">Vertical duration</string>
+    <string name="collapse_anim_duration_ry_title">Collapse duration</string>
+    <string name="collapse_anim_duration_bg_title">Collapse background</string>
+    <string name="retract_anim_duration_title">Retract duration</string>
+    <string name="diamond_anim_duration_title">Diamond duration</string>
+    <string name="dots_anim_duration_title">Dots duration</string>
+    <string name="home_resize_anim_duration_title">Button resize duration</string>
+    <string name="pixel_anim_color_title">Dot colors</string>
+    <string name="dot_top_color_title">Top dot</string>
+    <string name="dot_bottom_color_title">Bottom dot</string>
+    <string name="dot_left_color_title">Left dot</string>
+    <string name="dot_right_color_title">Right dot</string>
+    <string name="dot_obey_themes">Default (Theme color)</string>
+    <string name="dot_custom_color">Custom</string>
+    <string name="dot_random_color">Random</string>
+    <string name="dot_random_color_more">Very Random</string>
+    <string name="dot_color_switch_title">Style</string>
+
     <!--One handed mode -->
     <string name="one_handed_mode_title">One handed mode</string>
     <string name="one_handed_mode_summary">Allows swiping on the navigation bar to enable one handed mode</string>
@@ -2339,7 +2370,7 @@
    <string name="force_authorize_substratum_packages_title">Allow theme apps from unknown sources</string>
    <string name="force_authorize_substratum_packages_summary">Force authorize every theme app</string>
 
-    <string name="magisk_title">Magisk Manager</string>
+    <string name="magisk_title">Magisk manager</string>
     <string name="magisk_summary">Root management</string>
 
     <string name="notif_text_color">Text color</string>
@@ -2379,5 +2410,14 @@
 
     <string name="no_sim_cluster_switch_title">No sim network hide</string>
     <string name="no_sim_cluster_switch_summary">Hide the network bar if the subscription of sim is inactive and disabled. If sim is not disabled, this switch will not work</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">Brightness</string>
+    <string name="night_brightness_value_title">Night Light brightness</string>
+    <string name="night_brightness_text">When Night Light is enabled, automatically set the desired brightness.</string>
+    <string name="night_bright_disabled">Disabled</string>
+    <string name="night_bright_min">Minimum brightness</string>
+    <string name="night_bright_low">Low brightness</string>
+    <string name="night_bright_medium">Medium brightness</string>
 
 </resources>
