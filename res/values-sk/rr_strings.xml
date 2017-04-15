@@ -1525,6 +1525,7 @@
   <string name="lavamp_solid_speed_title">Rýchlosť lávovej lampy</string>
   <string name="pulse_solid_units_count">Počet plných čiar</string>
   <string name="pulse_solid_units_opacity">Priehľadnosť plných čiar </string>
+  <string name="pulse_fading_blocks_opacity">Transparentnosť blednúcich blokov</string>
   <string name="pulse_solid_dimen_category">Nastavenie režimu plnej čiary</string>
   <string name="pulse_custom_buttons_opacity_title">Transparentnosť tlačidiel v režime Pulse</string>
   <string name="fling_lavalamp_color_from">Lávové lampy počiatočná farba</string>
@@ -1655,6 +1656,9 @@
   <string name="text_title">Text</string>
   <string name="icon_title">Ikona</string>
   <string name="colors_title">Farby</string>
+  <string name="ticker_disabled">Žiadne oznámenie</string>
+  <string name="ticker_enabled">Notifikačné oznámenie</string>
+  <string name="ticker_media_enabled">Notifikačné a hudobné oznámenie</string>
   <!-- Superuser indicator on status bar -->
   <string name="show_su_indicator_title">Indikátor Superusera</string>
   <string name="show_su_indicator_summary">Ak je aktívna relácia, zobraziť ukazovateľ Superuser v stavovom riadku</string>
@@ -1727,23 +1731,7 @@
   <!-- Heads up switch -->
   <string name="heads_up_switch_title">Plávajúce oznámenia</string>
   <string name="heads_up_switch_summary">Globálna zmena nastavenia plávajúcich oznámení, nie pre jednotlivé aplikácie.</string>
-  <string name="lockscreen_pin_ripple_title">Zvlnenie pri zadaní Pinu na blokovacej obrazovke</string>
-  <string name="lockscreen_pin_ripple_summary">Zakázať odstránenie zvlnenia pri zadaní PINu</string>
-  <!-- Optional screenshot type -->
-  <string name="screenshot_type_title">Typ snímky obrazovky</string>
-  <string name="screenshot_type_fullscreen">Snímka celej obrazovky</string>
-  <string name="screenshot_type_partial">Pretiahnutím vyberte oblasť, ktorú chcete použiť ako snímku obrazovky</string>
-  <!-- Screenshot delay -->
-  <string name="screenshot_options_category">Možnosti snímky obrazovky</string>
-  <string name="screenshot_delay_title">Oneskorenie snímky obrazovky</string>
-  <string name="screenshot_delay_summary">Nastaviť časový interval, kedy bude zachytený snímok obrazovky</string>
-  <!--Screenshot crop and share -->
-  <string name="screenshot_crop_and_share_title">Orezanie obrázku &amp; zdieľanie</string>
-  <string name="screenshot_crop_and_share_summary">Po vytvorení snímky obrazovky zobraziť okno editora pre orezanie, uloženie alebo zdieľanie</string>
   <string name="heads_up_settings">Plávajúce oznámenia</string>
-  <!-- Lockscreen battery info indicator  -->
-  <string name="lockscreen_battery_info_title">Informácie o batérii na obrazovke uzamknutia</string>
-  <string name="lockscreen_battery_info_summary">Zobraziť maximálny prúd, napätie a teplotu batérie pri nabíjaní na zamknutej obrazovke</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Časový limit</string>
   <string name="heads_up_time_out_summary">Oznámenia budú zobrazované <xliff:g id="number">%d</xliff:g> sekúnd</string>
@@ -1764,6 +1752,22 @@
   <string name="heads_up_snooze_10min">10 minút</string>
   <string name="heads_up_snooze_15min">15 minút</string>
   <string name="heads_up_snooze_20min">20 minút</string>
+  <string name="lockscreen_pin_ripple_title">Zvlnenie pri zadaní Pinu na blokovacej obrazovke</string>
+  <string name="lockscreen_pin_ripple_summary">Zakázať odstránenie zvlnenia pri zadaní PINu</string>
+  <!-- Optional screenshot type -->
+  <string name="screenshot_type_title">Typ snímky obrazovky</string>
+  <string name="screenshot_type_fullscreen">Snímka celej obrazovky</string>
+  <string name="screenshot_type_partial">Pretiahnutím vyberte oblasť, ktorú chcete použiť ako snímku obrazovky</string>
+  <!-- Screenshot delay -->
+  <string name="screenshot_options_category">Možnosti snímky obrazovky</string>
+  <string name="screenshot_delay_title">Oneskorenie snímky obrazovky</string>
+  <string name="screenshot_delay_summary">Nastaviť časový interval, kedy bude zachytený snímok obrazovky</string>
+  <!--Screenshot crop and share -->
+  <string name="screenshot_crop_and_share_title">Orezanie obrázku &amp; zdieľanie</string>
+  <string name="screenshot_crop_and_share_summary">Po vytvorení snímky obrazovky zobraziť okno editora pre orezanie, uloženie alebo zdieľanie</string>
+  <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Informácie o batérii na obrazovke uzamknutia</string>
+  <string name="lockscreen_battery_info_summary">Zobraziť maximálny prúd, napätie a teplotu batérie pri nabíjaní na zamknutej obrazovke</string>
   <!-- Camera shutter sound -->
   <string name="camera_sounds_title">Zvuk spúšte fotoaparátu</string>
   <string name="camera_sounds_summary">Zakázanie nemusí správne fungovať u aplikácií fotoaparátu treťej strany a v režime HDR+</string>
@@ -2029,6 +2033,9 @@
   <string name="smartbar_doubletap_sleep_title">Uspať dvojitým kliknutím</string>
   <string name="smartbar_doubletap_sleep_summary">Dvojiklik na práznu oblasť stavového riadoku vypne obrazovku</string>
   <!-- Pixel Animation Duration -->
+  <string name="pixel_anim_title">Pixel animácia stavového riadku</string>
+  <string name="pixel_anim_summary">Prispôsobenie  pixel animácie v stavovom riadku</string>
+  <string name="pixel_anim_warning">Prispôsobiť pixel animáciu v stavovom riadku. UPOZORNENIE! Zmena predvolených hodnôt môže spôsobiť pokles výkonu animácií. Pokračujte na vlastné riziko</string>
   <string name="pixel_anim_x_title">Trvanie horizontálnej animácie</string>
   <string name="pixel_anim_y_title">Trvanie vertikálnej animácie</string>
   <string name="collapse_anim_duration_ry_title">Trvanie animácie zbalenia</string>
@@ -2037,6 +2044,16 @@
   <string name="diamond_anim_duration_title">Trvanie animácie kosoštvorec</string>
   <string name="dots_anim_duration_title">Trvanie animácie pre bodky</string>
   <string name="home_resize_anim_duration_title">Trvanie zmeny veľkosti tlačidla</string>
+  <string name="pixel_anim_color_title">Farby bodov</string>
+  <string name="dot_top_color_title">Horný bod</string>
+  <string name="dot_bottom_color_title">Spodný bod</string>
+  <string name="dot_left_color_title">Ľavý bod</string>
+  <string name="dot_right_color_title">Pravý bod</string>
+  <string name="dot_obey_themes">Predvolená (Tématická farba)</string>
+  <string name="dot_custom_color">Vlastná</string>
+  <string name="dot_random_color">Náhodná</string>
+  <string name="dot_random_color_more">Veľmi náhodná</string>
+  <string name="dot_color_switch_title">Štýl</string>
   <!--One handed mode -->
   <string name="one_handed_mode_title">Režim jednou rukou</string>
   <string name="one_handed_mode_summary">Umožní zapnúť režim jednou rukou posunutím po navigačnej lište</string>
@@ -2155,6 +2172,9 @@
   <!-- Roaming indicator icon -->
   <string name="roaming_indicator_icon_title">Zobraziť roamingu indikátor</string>
   <string name="roaming_indicator_icon_summary">V režime roamingu zobrazovať indikátor v ikone signálu siete</string>
+  <!-- Data disabled icon -->
+  <string name="data_disabled_icon_title">Zobraziť ikonu vypnuté dáta</string>
+  <string name="data_disabled_icon_summary">Zobraziť znak X na ikone signálu siete, keď sú dáta zakázané</string>
   <!-- Screen state service -->
   <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">Pozastavené akcie</string>

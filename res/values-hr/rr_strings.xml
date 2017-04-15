@@ -1525,6 +1525,7 @@
   <string name="lavamp_solid_speed_title">Brzina lava lampe</string>
   <string name="pulse_solid_units_count">Broj punih crta</string>
   <string name="pulse_solid_units_opacity">Neprozirnost punih crta</string>
+  <string name="pulse_fading_blocks_opacity">Neprozirnost izbljeđujućih blokova</string>
   <string name="pulse_solid_dimen_category">Postavke načina punih crta</string>
   <string name="pulse_custom_buttons_opacity_title">Neprozirnost gumba pri pulsiranju</string>
   <string name="fling_lavalamp_color_from">Boja početka lava lampe</string>
@@ -1727,23 +1728,7 @@
   <!-- Heads up switch -->
   <string name="heads_up_switch_title">Plutajuće obavijesti</string>
   <string name="heads_up_switch_summary">Općenito omogućite plutajuće obavijesti, ne po aplikaciji.</string>
-  <string name="lockscreen_pin_ripple_title">Efekt mreškanja pri unosu PIN-a</string>
-  <string name="lockscreen_pin_ripple_summary">Onemogućite da biste uklonili efekt mreškanja kad unosite brojeve PIN-a.</string>
-  <!-- Optional screenshot type -->
-  <string name="screenshot_type_title">Vrsta snimke zaslona</string>
-  <string name="screenshot_type_fullscreen">Snimi cijeli zaslon</string>
-  <string name="screenshot_type_partial">Odaberite točno dio zaslona koji želite snimiti</string>
-  <!-- Screenshot delay -->
-  <string name="screenshot_options_category">Opcije snimke zaslona</string>
-  <string name="screenshot_delay_title">Kašnjenje snimke zaslona</string>
-  <string name="screenshot_delay_summary">Prilagodite vrijeme snimke zaslona</string>
-  <!--Screenshot crop and share -->
-  <string name="screenshot_crop_and_share_title">Obrezivanje i dijeljenje snimke zaslona</string>
-  <string name="screenshot_crop_and_share_summary">Prikazuje prozor uređivača nakon što snimite zaslon kako biste mogli nešto napraviti s tom slikom, poput obrezivanja, spremanja ili dijeljenja.</string>
   <string name="heads_up_settings">Plutajuće obavijesti</string>
-  <!-- Lockscreen battery info indicator  -->
-  <string name="lockscreen_battery_info_title">Informacije o bateriji na zaklj. zaslonu</string>
-  <string name="lockscreen_battery_info_summary">Prikazuje maksimalni i trenutni napon punjača i temperaturu baterije na zaključanom zaslonu tijekom punjenja.</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Istek</string>
   <string name="heads_up_time_out_summary">Obavijesti koje vire preko zaslona prikazivat će se <xliff:g id="number">%d</xliff:g> s.</string>
@@ -1764,6 +1749,22 @@
   <string name="heads_up_snooze_10min">10 minuta</string>
   <string name="heads_up_snooze_15min">15 minuta</string>
   <string name="heads_up_snooze_20min">20 minuta</string>
+  <string name="lockscreen_pin_ripple_title">Efekt mreškanja pri unosu PIN-a</string>
+  <string name="lockscreen_pin_ripple_summary">Onemogućite da biste uklonili efekt mreškanja kad unosite brojeve PIN-a.</string>
+  <!-- Optional screenshot type -->
+  <string name="screenshot_type_title">Vrsta snimke zaslona</string>
+  <string name="screenshot_type_fullscreen">Snimi cijeli zaslon</string>
+  <string name="screenshot_type_partial">Odaberite točno dio zaslona koji želite snimiti</string>
+  <!-- Screenshot delay -->
+  <string name="screenshot_options_category">Opcije snimke zaslona</string>
+  <string name="screenshot_delay_title">Kašnjenje snimke zaslona</string>
+  <string name="screenshot_delay_summary">Prilagodite vrijeme snimke zaslona</string>
+  <!--Screenshot crop and share -->
+  <string name="screenshot_crop_and_share_title">Obrezivanje i dijeljenje snimke zaslona</string>
+  <string name="screenshot_crop_and_share_summary">Prikazuje prozor uređivača nakon što snimite zaslon kako biste mogli nešto napraviti s tom slikom, poput obrezivanja, spremanja ili dijeljenja.</string>
+  <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Informacije o bateriji na zaklj. zaslonu</string>
+  <string name="lockscreen_battery_info_summary">Prikazuje maksimalni i trenutni napon punjača i temperaturu baterije na zaključanom zaslonu tijekom punjenja.</string>
   <!-- Camera shutter sound -->
   <string name="camera_sounds_title">Zvuk okidača fotoaparata</string>
   <string name="camera_sounds_summary">Onemogućavanje ovog možda neće funkcionirati s aplikacijama fotoaparata treće strane ili u HDR+ načinu.</string>
@@ -2029,6 +2030,9 @@
   <string name="smartbar_doubletap_sleep_title">Dvostruki dodir za zaključavanje</string>
   <string name="smartbar_doubletap_sleep_summary">Dvostruki dodir praznih područja navigacijske trake isključit će zaslon.</string>
   <!-- Pixel Animation Duration -->
+  <string name="pixel_anim_title">Animacija Pixel navigacijske trake</string>
+  <string name="pixel_anim_summary">Prilagodite razne elemente Pixel animacija za navigacijsku traku</string>
+  <string name="pixel_anim_warning">Prilagodite razne elemente Pixel animacija za navigacijsku traku. UPOZORENJE! Promjena zadanih vrijednosti može uzrokovati pad performansi u animacijama. Nastavite na vlastitu odgovornost!</string>
   <string name="pixel_anim_x_title">Vodoravno trajanje</string>
   <string name="pixel_anim_y_title">Okomito trajanje</string>
   <string name="collapse_anim_duration_ry_title">Trajanje smanjivanja</string>
@@ -2037,6 +2041,16 @@
   <string name="diamond_anim_duration_title">Dijamantsko trajanje</string>
   <string name="dots_anim_duration_title">Trajanje točkica</string>
   <string name="home_resize_anim_duration_title">Trajanje promjene veličine gumba</string>
+  <string name="pixel_anim_color_title">Boje točke</string>
+  <string name="dot_top_color_title">Gornja točka</string>
+  <string name="dot_bottom_color_title">Donja točka</string>
+  <string name="dot_left_color_title">Lijeva točka</string>
+  <string name="dot_right_color_title">Desna točka</string>
+  <string name="dot_obey_themes">Zadana (boja teme)</string>
+  <string name="dot_custom_color">Prilagođeno</string>
+  <string name="dot_random_color">Nasumično</string>
+  <string name="dot_random_color_more">Totalno nasumično</string>
+  <string name="dot_color_switch_title">Stil</string>
   <!--One handed mode -->
   <string name="one_handed_mode_title">Jednoručni način</string>
   <string name="one_handed_mode_summary">Omogućava prelazak prstom preko navigacijske trake za omogućavanje jednoručnog načina rada.</string>
@@ -2155,6 +2169,7 @@
   <!-- Roaming indicator icon -->
   <string name="roaming_indicator_icon_title">Prikaži pokazatelj roaminga</string>
   <string name="roaming_indicator_icon_summary">Prikazuje pokazatelj roaminga u ikoni signala kada ste u roamingu.</string>
+  <!-- Data disabled icon -->
   <!-- Screen state service -->
   <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">Obustavi radnje</string>

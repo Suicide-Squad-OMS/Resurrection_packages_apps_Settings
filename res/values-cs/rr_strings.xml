@@ -283,7 +283,7 @@
   <string name="toast_icon_color">Barva ikony Toast</string>
   <!-- Bluetooth status -->
   <string name="bluetooth_battery_title">Zobrazit stav baterie Bluetooth</string>
-  <string name="bluetooth_battery_summary">Zobrait stav baterie aktuálně připojeného bluetooth zařízení, je-li dostupné.</string>
+  <string name="bluetooth_battery_summary">Zobrazit stav baterie aktuálně připojeného bluetooth zařízení, je-li dostupné.</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Vynutit rozšířené oznámení</string>
   <string name="force_expanded_notifications_summary">K dispozici pouze pro aplikace, které podporují rozšířené oznámení</string>
@@ -1525,6 +1525,7 @@
   <string name="lavamp_solid_speed_title">Rychlost lávové lampy</string>
   <string name="pulse_solid_units_count">Počet plných čar</string>
   <string name="pulse_solid_units_opacity">Průhlednost plných čar</string>
+  <string name="pulse_fading_blocks_opacity">Průhlednost blednutí bloků</string>
   <string name="pulse_solid_dimen_category">Nastavení režimu plné čáry</string>
   <string name="pulse_custom_buttons_opacity_title">Průhlednost tlačítek v režimu Pulse</string>
   <string name="fling_lavalamp_color_from">Počáteční barva Lávové lampy</string>
@@ -1655,6 +1656,9 @@
   <string name="text_title">Text</string>
   <string name="icon_title">Ikona</string>
   <string name="colors_title">Barvy</string>
+  <string name="ticker_disabled">Žádné oznámení</string>
+  <string name="ticker_enabled">Notifikační oznámení</string>
+  <string name="ticker_media_enabled">Notifikační a hudební oznámení</string>
   <!-- Superuser indicator on status bar -->
   <string name="show_su_indicator_title">Superuser indikátor</string>
   <string name="show_su_indicator_summary">Superuser ukazatel je zobrazen, pokud je aktivní relace</string>
@@ -1727,23 +1731,7 @@
   <!-- Heads up switch -->
   <string name="heads_up_switch_title">Plovoucí upozornění</string>
   <string name="heads_up_switch_summary">Globální změna nastavení heads-up, nikoli pro jednotlivé aplikace.</string>
-  <string name="lockscreen_pin_ripple_title">Zvlnění při zadání PINu na zamykací obrazovce</string>
-  <string name="lockscreen_pin_ripple_summary">Zakázat odstranění zvlnění při zadání PINu</string>
-  <!-- Optional screenshot type -->
-  <string name="screenshot_type_title">Typ snímku obrazovky</string>
-  <string name="screenshot_type_fullscreen">Snímek celé obrazovky</string>
-  <string name="screenshot_type_partial">Přetáhnutím vyberte oblast, kterou chcete použít jako snímek obrazovky</string>
-  <!-- Screenshot delay -->
-  <string name="screenshot_options_category">Možnosti snímku obrazovky</string>
-  <string name="screenshot_delay_title">Prodleva snímku obrazovky</string>
-  <string name="screenshot_delay_summary">Upravit dobu, kdy je zachycen snímek obrazovky</string>
-  <!--Screenshot crop and share -->
-  <string name="screenshot_crop_and_share_title">Oříznutí snímku &amp; sdílení</string>
-  <string name="screenshot_crop_and_share_summary">Zobrazit okno editoru po pořízení snímku obrazovky pro operace jako je oříznutí, uložení nebo sdílení</string>
   <string name="heads_up_settings">Plovoucí upozornění</string>
-  <!-- Lockscreen battery info indicator  -->
-  <string name="lockscreen_battery_info_title">Informace o baterii na zamykací obrazovce</string>
-  <string name="lockscreen_battery_info_summary">Zobrazit maximální proud, napětí a teplotu baterie při nabíjení na zamykací obrazovce</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Časový limit</string>
   <string name="heads_up_time_out_summary">Prohlížení oznámení bude zobrazeno na <xliff:g id="number">%d</xliff:g> sekund</string>
@@ -1764,6 +1752,22 @@
   <string name="heads_up_snooze_10min">10 minut</string>
   <string name="heads_up_snooze_15min">15 minut</string>
   <string name="heads_up_snooze_20min">20 minut</string>
+  <string name="lockscreen_pin_ripple_title">Zvlnění při zadání PINu na zamykací obrazovce</string>
+  <string name="lockscreen_pin_ripple_summary">Zakázat odstranění zvlnění při zadání PINu</string>
+  <!-- Optional screenshot type -->
+  <string name="screenshot_type_title">Typ snímku obrazovky</string>
+  <string name="screenshot_type_fullscreen">Snímek celé obrazovky</string>
+  <string name="screenshot_type_partial">Přetáhnutím vyberte oblast, kterou chcete použít jako snímek obrazovky</string>
+  <!-- Screenshot delay -->
+  <string name="screenshot_options_category">Možnosti snímku obrazovky</string>
+  <string name="screenshot_delay_title">Prodleva snímku obrazovky</string>
+  <string name="screenshot_delay_summary">Upravit dobu, kdy je zachycen snímek obrazovky</string>
+  <!--Screenshot crop and share -->
+  <string name="screenshot_crop_and_share_title">Oříznutí snímku &amp; sdílení</string>
+  <string name="screenshot_crop_and_share_summary">Zobrazit okno editoru po pořízení snímku obrazovky pro operace jako je oříznutí, uložení nebo sdílení</string>
+  <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Informace o baterii na zamykací obrazovce</string>
+  <string name="lockscreen_battery_info_summary">Zobrazit maximální proud, napětí a teplotu baterie při nabíjení na zamykací obrazovce</string>
   <!-- Camera shutter sound -->
   <string name="camera_sounds_title">Zvuk závěrky fotoaparátu</string>
   <string name="camera_sounds_summary">Zakázání nemusí fungovat na aplikacích fotoaparátu 3. strany a v režimu HDR+</string>
@@ -2029,6 +2033,9 @@
   <string name="smartbar_doubletap_sleep_title">Dvojím klepnutím uspat</string>
   <string name="smartbar_doubletap_sleep_summary">Dvojím poklepáním na prázdné místo stavové lišty vypnete obrazovku</string>
   <!-- Pixel Animation Duration -->
+  <string name="pixel_anim_title">Pixel animace navigační lišty </string>
+  <string name="pixel_anim_summary">Přizpůsobit různé prvky pixel animace na navigačním panelu</string>
+  <string name="pixel_anim_warning">Přizpůsobit různé prvky pixel animace na navigačním panelu. VAROVÁNÍ! Změna výchozích hodnot může způsobit pokles výkonu v animaci. Postupujte na vlastní nebezpečí</string>
   <string name="pixel_anim_x_title">Doba trvání horizontální animace</string>
   <string name="pixel_anim_y_title">Doba trvání vertikální animace</string>
   <string name="collapse_anim_duration_ry_title">Doba trvání animace sbalení</string>
@@ -2037,6 +2044,16 @@
   <string name="diamond_anim_duration_title">Doba trvání animace kosočtverce</string>
   <string name="dots_anim_duration_title">Doba trvání animace teček</string>
   <string name="home_resize_anim_duration_title">Doba trvání animace změny velikosti tlačítka</string>
+  <string name="pixel_anim_color_title">Barvy bodů</string>
+  <string name="dot_top_color_title">Horní bod</string>
+  <string name="dot_bottom_color_title">Dolní bod</string>
+  <string name="dot_left_color_title">Levý bod</string>
+  <string name="dot_right_color_title">Pravý bod</string>
+  <string name="dot_obey_themes">Výchozí (barva motivu)</string>
+  <string name="dot_custom_color">Vlastní</string>
+  <string name="dot_random_color">Náhodně</string>
+  <string name="dot_random_color_more">Velmi nepravidelně</string>
+  <string name="dot_color_switch_title">Styl</string>
   <!--One handed mode -->
   <string name="one_handed_mode_title">Režim jedné ruky</string>
   <string name="one_handed_mode_summary">Umožnit zapnutí režimu jednou rukou posunutím přes navigační lištu</string>
@@ -2155,6 +2172,9 @@
   <!-- Roaming indicator icon -->
   <string name="roaming_indicator_icon_title">Zobrazit indikátor roamingu</string>
   <string name="roaming_indicator_icon_summary">V režimu roamingu zobrazit indikátor v ikoně signálu</string>
+  <!-- Data disabled icon -->
+  <string name="data_disabled_icon_title">Zobrazit ikonu při vypnutí dat</string>
+  <string name="data_disabled_icon_summary">Zobrazit křížek na ikoně signálu sítě při vypnutých datech</string>
   <!-- Screen state service -->
   <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">Pozastavené akce</string>
