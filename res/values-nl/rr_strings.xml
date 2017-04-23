@@ -66,7 +66,6 @@
   <string name="updater_title">Updates</string>
   <string name="altan_summary">● Oprichter \n● Projectleider \n● Hoofdontwikkelaar \n● UX ontwerper \n● Onderhouder</string>
   <string name="varun_summary">● Hoofdontwikkelaar \n● UX ontwerper \n● Onderhouder</string>
-  <string name="akhil_summary">● Ontwikkelaar \n● Onderhouder \n● Javascript meester</string>
   <string name="brian_summary">● Ontwikkelaar \n● Onderhouder</string>
   <string name="device_maintainers_title">Apparaten en Onderhouders</string>
   <string name="device_maintainers_title_summary">Lijst van apparaten en hun officiële RR-OS onderhouders</string>
@@ -1783,6 +1782,8 @@
   <string name="sizer_message_noselect">Niets geselecteerd.</string>
   <string name="system_app_remover">Systeem app verwijderaar</string>
   <!-- RR summary text -->
+  <string name="rr_settings_summary_title">Eigen subtitel bij instellingen menu</string>
+  <string name="custom_summary_title">Eigen subtitel</string>
   <string name="custom_summary_explain">Voer een korte tekst in. Laat leeg om terug te keren naar de originele tekst.</string>
   <!-- Custom summaries -->
   <string name="custom_summary_randomize_title">Willekeurige samenvatting</string>
@@ -1805,6 +1806,7 @@
   <string name="sum17">Goed gedaan! Je hebt een bonus feature verdiend</string>
   <string name="sum20">Noobs kunnen niet naar binnen</string>
   <string name="sum21">#gotresurrected</string>
+  <string name="sum22">Breaking News: Apple verwijdert flitser uit de volgende iPhones.</string>
   <string name="sum23">Bent je nu gelukkig?</string>
   <string name="sum24">Genoeg, stop met mij aanraken!</string>
   <string name="sum25">#Swagger</string>
