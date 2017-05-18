@@ -328,7 +328,6 @@
   <string name="device_scorpio">Xiaomi Mi Note 2</string>
   <string name="device_scorpio_summary">Scorpio\nMantido por - Cenkay KESER</string>
   <string name="device_lithium">Xiaomi Mi Mix</string>
-  <string name="device_lithium_summary">Lithium\nMantido por - Cenkay KESER</string>
   <string name="device_dior">Xiaomi Redmi Note 4G</string>
   <string name="device_dior_summary">dior\nMantido por - Ashish Kotnala</string>
   <string name="device_kenzo">Xiaomi Redmi Note 3</string>
@@ -427,4 +426,6 @@
   <string name="device_lenovo_P1a42_summary">P1a42  \nMantido por - Subham (DerkLord)</string>
   <string name="device_Zuk_Z2">Zuk Z2</string>
   <string name="device_Zuk_Z2_summary"> Zuk Z2\nMantido por - MR.HACKER </string>
+  <string name="device_ville">HTC One S</string>
+  <string name="device_ville_summary">Ville \nMantido por - Moozon</string>
 </resources>
