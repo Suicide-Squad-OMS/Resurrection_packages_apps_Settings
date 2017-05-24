@@ -1851,22 +1851,22 @@
   <string name="custom_summary_randomize_explain">Önceden yazılmış özetler rastgele seçilecek ve Ayarlar menüsünü her açtığınızda değişecektir.\nBu, herhangi bir özel özet seti yerine geçer.</string>
   <string name="sum1">Tüm seçenekleri kontrol ettiniz mi?</string>
   <string name="sum2">Son Dakika: Donald Trump saç stilini değiştiriyor!</string>
-  <string name="sum3">100.000 kere vurdunuz.</string>
+  <string name="sum3">100.000 kez dokundunuz.</string>
   <string name="sum4">Bir sürü seçenek!</string>
-  <string name="sum5">Bana şimdi dokunun!</string>
+  <string name="sum5">Şimdi bana dokunun!</string>
   <string name="sum6">Başka ne var?</string>
   <string name="sum7">Ne Mutlu Türküm Diyene</string>
   <string name="sum8">Bunu kaçırmak istemeyeceksiniz!</string>
-  <string name="sum9">RR \'ye Hoşgeldiniz</string>
+  <string name="sum9">RR\'ye Hoşgeldiniz</string>
   <string name="sum10">Beni pas geçme!</string>
   <string name="sum11">Ödevini bitirdin mi? ツ</string>
   <string name="sum12">Merhaba, ben yeni asistanın</string>
   <string name="sum13">Arayüz ile uğraşma!</string>
   <string name="sum14">Ne görüyorsun?</string>
   <string name="sum15">Sadece premium kullanıcılar için.</string>
-  <string name="sum16">Sıkıldın mı? Tamam bana şimdi dokunun!</string>
+  <string name="sum16">Sıkıldın mı? Tamam şimdi bana dokun!</string>
   <string name="sum17">Bravo! Bir bonus özellik kazandınız</string>
-  <string name="sum18">G+ topluluğu üzerinde spamları durdur</string>
+  <string name="sum18">G+ topluluğunda spam göndermeyi durdurun</string>
   <string name="sum19">G+ gönderme kurallarını kontrol edin</string>
   <string name="sum20">Ey Türk Gençliği!</string>
   <string name="sum21">#gotresurrected</string>
@@ -2260,4 +2260,16 @@ Piksel yoğunluğu <xliff:g name="count" example="520">%d</xliff:g></string>
   <string name="incall_vibrate_connect_title">Bağlanınca titre</string>
   <string name="incall_vibrate_call_wait_title">Çağrı bekletildiğinde titre</string>
   <string name="incall_vibrate_disconnect_title">Bağlantı kopunca titre</string>
+  <string name="headset_connect_player_disabled">Devre dışı</string>
+  <string name="headset_connect_player_wired">Kablolu kulaklık takıldığında</string>
+  <string name="headset_connect_player_bt_no_carkit">BT kulaklık seti (araç kiti değil) takıldığında</string>
+  <string name="headset_connect_player_bt">BT kulaklık seti takıldığında</string>
+  <string name="headset_connect_player_both_no_carkit">Kablolu veya BT kulaklık seti (araç kiti değil) takıldığında</string>
+  <string name="headset_connect_player_both">Kablolu veya BT kulaklık seti takıldığında</string>
+  <!-- No navigation notification -->
+  <string name="no_navigation_notif_title">Gezinme yöntemi hatırlatıcısı yok</string>
+  <string name="no_navigation_notif_summary">Etkin bir gezinme yöntemi olmadığında bir bildirim gösterin</string>
+  <!-- Settings header -->
+  <string name="show_settings_header_title">Özel çekmece başlığı</string>
+  <string name="show_settings_header_summary">Ayarlar çekmecesinde özel başlık göster</string>
 </resources>
