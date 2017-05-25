@@ -89,7 +89,7 @@ public class PowerWhitelistBackend {
             for (String app : whitelistedApps) {
                 mWhitelistedApps.add(app);
             }
-            String[] sysWhitelistedApps = mDeviceIdleService.getSystemPowerWhitelist();
+            String[] sysWhitelistedApps = mDeviceIdleService.getSystemPowerWhitelistOriginal();
             for (String app : sysWhitelistedApps) {
                 mSysWhitelistedApps.add(app);
             }
