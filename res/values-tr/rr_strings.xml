@@ -1941,7 +1941,7 @@
   <string name="qs_tile_title_visibility_summary_off">Hızlı ayarlar kare başlıkları artık görünmez</string>
   <!-- setting: show CPU info-->
   <string name="show_cpu_info">İşlemci bilgisini göster</string>
-  <string name="show_cpu_info_summary">Geçerli işlemci bilgisini gösteren ekran yer paylaşımı</string>
+  <string name="show_cpu_info_summary">Geçerli işlemci bilgisini gösteren ekran paylaşımı</string>
   <!-- Status Bar Battery Icon Large Percentage Text -->
   <string name="battery_large_text">Büyük pil simgesi yüzdesi</string>
   <string name="battery_large_text_summary_on">Büyük metin görüntülenir</string>
@@ -2273,4 +2273,8 @@ Piksel yoğunluğu <xliff:g name="count" example="520">%d</xliff:g></string>
   <string name="show_settings_header_title">Özel çekmece başlığı</string>
   <string name="show_settings_header_summary">Ayarlar çekmecesinde özel başlık göster</string>
   <!-- FP gesture -->
+  <string name="quick_pulldown_fp_title">Parmak izi ile hızlı aşağı çekme</string>
+  <string name="quick_pulldown_fp_summary">Parmak izi sensöründe parmağınızı yalnızca bir kez kaydırarak hızlı ayarlar paneli genişletin</string>
+  <string name="recents_lock_icon_title">Kilit simgesi</string>
+  <string name="recents_lock_icon_summary">Son kullanılan uygulamaların başlığında kilit simgesi göster</string>
 </resources>
