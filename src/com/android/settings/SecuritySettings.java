@@ -120,10 +120,17 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final int PASSWORD_VISIBLE = 1;
     private static final int PASSWORD_INVISIBLE = 0;
 
+    private static final String KEY_DENY_NEW_USB = "deny_new_usb";
+    private static final String DENY_NEW_USB_PROP = "security.deny_new_usb";
+    private static final String DENY_NEW_USB_PERSIST_PROP = "persist.security.deny_new_usb";
+
+    private static final String KEY_BACKGROUND_CLIPBOARD = "background_clipboard";
+    private static final String BACKGROUND_CLIPBOARD_PERSIST_PROP = "persist.security.bg_clipboard";
+
     // These switch preferences need special handling since they're not all stored in Settings.
     private static final String SWITCH_PREFERENCE_KEYS[] = {
             KEY_SHOW_PASSWORD, KEY_TOGGLE_INSTALL_APPLICATIONS, KEY_UNIFICATION,
-            KEY_VISIBLE_PATTERN_PROFILE
+            KEY_VISIBLE_PATTERN_PROFILE, KEY_DENY_NEW_USB, KEY_BACKGROUND_CLIPBOARD
     };
 
     // Only allow one trust agent on the platform.
@@ -155,6 +162,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private Intent mTrustAgentClickIntent;
 
     private int mProfileChallengeUserId;
+
+    private ListPreference mDenyNewUsb;
+    private SwitchPreference mBackgroundClipboard;
 
     private String mCurrentDevicePassword;
     private String mCurrentProfilePassword;
@@ -449,6 +459,14 @@ public class SecuritySettings extends SettingsPreferenceFragment
             }
         }
 
+        if (mIsAdmin) {
+            mBackgroundClipboard = (SwitchPreference) findPreference(KEY_BACKGROUND_CLIPBOARD);
+        } else {
+            if (advancedCategory != null) {
+                advancedCategory.removePreference(advancedCategory.findPreference(KEY_BACKGROUND_CLIPBOARD));
+            }
+        }
+
         // The above preferences come and go based on security state, so we need to update
         // the index. This call is expected to be fairly cheap, but we may want to do something
         // smarter in the future.
@@ -627,6 +645,14 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
         if (mResetCredentials != null && !mResetCredentials.isDisabledByAdmin()) {
             mResetCredentials.setEnabled(!mKeyStore.isEmpty());
+        }
+
+        if (mDenyNewUsb != null) {
+            mDenyNewUsb.setValue(SystemProperties.get(DENY_NEW_USB_PERSIST_PROP, "disabled"));
+        }
+
+        if (mBackgroundClipboard != null) {
+            mBackgroundClipboard.setChecked(SystemProperties.getBoolean(BACKGROUND_CLIPBOARD_PERSIST_PROP, false));
         }
     }
 
@@ -823,6 +849,16 @@ public class SecuritySettings extends SettingsPreferenceFragment
             } else {
                 setNonMarketAppsAllowed(false);
             }
+        } else if (KEY_DENY_NEW_USB.equals(key)) {
+            String mode = (String) value;
+            SystemProperties.set(DENY_NEW_USB_PERSIST_PROP, mode);
+            // The dynamic mode defaults to the disabled state
+            if (mode.equals("dynamic")) {
+                SystemProperties.set(DENY_NEW_USB_PROP, "0");
+            }
+        } else if (KEY_BACKGROUND_CLIPBOARD.equals(key)) {
+            boolean enabled = (Boolean) value;
+            SystemProperties.set(BACKGROUND_CLIPBOARD_PERSIST_PROP, enabled ? "1" : "0");
         }
         return result;
     }
