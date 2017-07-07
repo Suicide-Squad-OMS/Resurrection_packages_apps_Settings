@@ -180,7 +180,6 @@
 	<item>@string/status_bar_battery_style_icon_portrait</item>
 	<item>@string/status_bar_battery_style_solid</item>
 	<item>@string/status_bar_battery_style_circle</item>
-	<item>@string/status_bar_battery_style_aoscp</item>
 	<item>@string/status_bar_battery_style_hidden</item>
 	<item>@string/status_bar_battery_style_icon_landscape</item>
 	<item>@string/status_bar_battery_style_text</item>
@@ -193,14 +192,12 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
-        <item>6</item>
      </string-array>
 
     <string-array name="battery_tile_style_entries" translatable="false">
         <item>@string/status_bar_battery_style_icon_portrait</item>
         <item>@string/status_bar_battery_style_solid</item>
         <item>@string/status_bar_battery_style_circle</item>
-        <item>@string/status_bar_battery_style_aoscp</item>
         <item>@string/status_bar_battery_style_icon_landscape</item>
     </string-array>
 
@@ -208,8 +205,7 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
-        <item>3</item>
-        <item>5</item>
+        <item>4</item>
     </string-array>
 
     <string-array name="text_charging_symbol_entries" translatable="false">
@@ -2074,6 +2070,24 @@
     </string-array>
 
     <string-array name="fp_swipe_call_actions_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="fp_swipe_call_actions_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="smartbar_longpress_delay_entries">
+        <item>@string/smartbar_longpress_delay_default</item>
+        <item>@string/smartbar_longpress_delay_normal</item>
+        <item>@string/smartbar_longpress_delay_long</item>
+    </string-array>
+
+    <string-array name="smartbar_longpress_delay_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
