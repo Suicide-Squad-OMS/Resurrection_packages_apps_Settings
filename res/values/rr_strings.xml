@@ -2516,11 +2516,13 @@
     <string name="single_tap_tile_add_title">Easy tile add</string>
     <string name="single_tap_tile_add_summary">Add quick tiles easily from qs customizer by simply tapping on them instead of dragging them</string>
 
-	<string name="qqs_scroll_title">Scroll small QS tiles</string> 
-	<string name="qqs_scroll_summary">Allow scrolling through the small QS tiles</string>
-
-	<string name="qs_small_tiles_title">Small QS tiles </string> 
+    <string name="qqs_scroll_title">Scroll small QS tiles</string> 
+    <string name="qqs_scroll_summary">Allow scrolling through the small QS tiles</string>
+    <string name="qs_small_tiles_title">Small QS tiles </string> 
 
     <string name="double_tap_wake_doze_title">Double-tap to wake on doze</string>
     <string name="double_tap_wake_doze_summary">Require a double-tap to wake the device on a doze pulse screen</string>
+
+    <string name="pa_pie_control_title">Pie 3.0</string> 
+
 </resources>
