@@ -501,11 +501,11 @@
         android:selectable="false"
         android:title="@string/device_jf" />
     <Preference
-        android:id="@+id/device_i9500"
+        android:id="@+id/device_ja3gxx"
         android:icon="@drawable/phone_tint"
-        android:summary="@string/device_i9500_summary"
+        android:summary="@string/device_ja3gxx_summary"
         android:selectable="false"
-        android:title="@string/device_i9500" />
+        android:title="@string/device_ja3gxx" />
     <Preference
         android:id="@+id/device_klte"
         android:icon="@drawable/phone_tint"
@@ -542,6 +542,12 @@
         android:summary="@string/device_n7100_summary"
         android:selectable="false"
         android:title="@string/device_n7100" />
+    <Preference
+        android:id="@+id/device_hlte"
+        android:icon="@drawable/phone_tint"
+        android:summary="@string/device_hlte_summary"
+        android:selectable="false"
+        android:title="@string/device_hlte" />
     <Preference
         android:id="@+id/device_ha3g"
         android:icon="@drawable/phone_tint"
@@ -1003,6 +1009,12 @@
        android:summary="@string/device_hydrogen_summary"
        android:selectable="false"
        android:title="@string/device_hydrogen" />
+<Preference
+       android:id="@+id/device_helium"
+       android:icon="@drawable/phone_tint"
+       android:summary="@string/device_helium_summary"
+       android:selectable="false"
+       android:title="@string/device_helium" />	  
    <Preference
        android:id="@+id/device_kenzo"
        android:icon="@drawable/phone_tint"
@@ -1039,6 +1051,12 @@
         android:summary="@string/device_land_summary"
         android:selectable="false"
         android:title="@string/device_land" />
+    <Preference
+       android:id="@+id/device_piccolo"
+       android:icon="@drawable/phone_tint"
+       android:summary="@string/device_piccolo_summary"
+       android:selectable="false"
+       android:title="@string/device_piccolo" />
     <Preference
        android:id="@+id/device_santoni"
        android:icon="@drawable/phone_tint"
