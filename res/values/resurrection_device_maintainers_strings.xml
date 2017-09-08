@@ -218,7 +218,7 @@
   <string name="device_grandprimeve3g_summary">SM-G531H \nMaintainer - Hassan Sardar</string>
 
   <string name="device_j5ltexx">Galaxy J5</string>
-  <string name="device_j5ltexx_summary">SM-J500F/FN/M/G/Y \nMaintainer - SoUnd001 </string>
+  <string name="device_j5ltexx_summary">SM-J500F/FN/M/G/Y/H \nMaintainer - Dyneteve </string>
 
   <string name="device_i9001">Galaxy S Plus</string>
   <string name="device_i9001_summary">GT-I9001 \nMaintainer - </string>
@@ -564,6 +564,9 @@
 
   <string name="device_huashan">Sony Xperia SP</string>
   <string name="device_huashan_summary">Huashan\nMaintainer - CodeZero, Adrian DC</string>
+  
+  <string name="device_z012d">Asus Zenfone 3</string>
+  <string name="device_z012d_summary">Z012D\nMaintainer - Ezio (TurkDevs)</string>
 
   <string name="device_z00a">Asus Zenfone 2</string>
   <string name="device_z00a_summary">Z00A\nMaintainer - sayeed99</string>
