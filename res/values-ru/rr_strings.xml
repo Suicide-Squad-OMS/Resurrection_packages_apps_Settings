@@ -1712,9 +1712,8 @@
   <string name="show_su_indicator_title">Индикатор суперпользователя</string>
   <string name="show_su_indicator_summary">Показывать индикатор суперпользователя, когда сессия активна</string>
   <!-- Pie -->
-  <string name="pie_enable_title">Включить PIE-управление</string>
-  <string name="pie_settings">Настройки PIE</string>
-  <string name="pie_enable_title">Включить PIE-управление</string>
+  <string name="pa_pie_control_title">PIE управление</string>
+  <string name="pie_enable_title">Включить PIE управление</string>
   <string name="pie_settings_summary">Настройте PIE как вам нравится</string>
   <string name="pie_theme_mode_title">Тема</string>
   <string name="pie_auto">Автоматически</string>
@@ -2307,4 +2306,7 @@
   <string name="cyan">Cyan</string>
   <string name="grey">Grey</string>
   <string name="default_string">По умолчанию</string>
+  <!-- MTP Dirty Hack -->
+  <string name="enable_mtp_dirtyhack_title">MTP вместо Зарядки</string>
+  <string name="enable_mtp_dirtyhack_summary">Включить MTP вместо Зарядки при подключении к ПК</string>
 </resources>
