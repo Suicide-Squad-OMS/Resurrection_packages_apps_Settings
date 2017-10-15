@@ -117,13 +117,6 @@
                 android:title="@string/pocket_judge_title"
                 android:summary="@string/pocket_judge_summary" />
 
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
-                android:key="high_touch_sensitivity_enable"
-                android:title="@string/high_touch_sensitivity_title"
-                android:summary="@string/high_touch_sensitivity_summary"
-                android:defaultValue="false"
-                cm:requiresFeature="cmhardware:FEATURE_HIGH_TOUCH_SENSITIVITY" />
-
         <!-- Disable on CM
         <DropDownPreference
                 android:key="auto_rotate"
