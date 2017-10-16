@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="rr_mod_version">Версия RR-OS</string>
+  <string name="rr_mod_version">Версия Resurrection Remix OS</string>
   <string name="build_date">Дата сборки</string>
   <string name="mod_version_default">По умолчанию</string>
   <!-- General -->
