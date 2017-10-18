@@ -29,6 +29,7 @@ import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.service.persistentdata.PersistentDataBlockManager;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
 import android.telephony.CarrierConfigManager;
@@ -67,6 +68,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
     private static final String PROPERTY_URL_SAFETYLEGAL = "ro.url.safetylegal";
     private static final String PROPERTY_SELINUX_STATUS = "ro.build.selinux";
+    private static final String PROPERTY_VERIFIED_BOOT_STATE = "ro.boot.verifiedbootstate";
+    private static final String PROPERTY_VERITY_MODE = "ro.boot.veritymode";
+    private static final String PROPERTY_PARTITION_SYSTEM_VERIFIED = "partition.system.verified";
+    private static final String PROPERTY_PARTITION_VENDOR_VERIFIED = "partition.vendor.verified";
     private static final String KEY_KERNEL_VERSION = "kernel_version";
     private static final String KEY_BUILD_NUMBER = "build_number";
     private static final String KEY_BUILD_TYPE = "rr_build_type";
@@ -74,7 +79,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_MODEL = "device_model";
     private static final String KEY_DEVICE_NAME = "rr_device_name";
     private static final String KEY_SELINUX_STATUS = "selinux_status";
+    private static final String KEY_VERIFIED_BOOT_STATUS = "verified_boot_status";
+    private static final String KEY_ANTI_THEFT_PROTECTION_STATUS = "anti_theft_protection_status";
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
+    private static final String KEY_BOOTLOADER_VERSION = "bootloader_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
     private static final String KEY_SECURITY_PATCH = "security_patch";
     private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
@@ -134,6 +142,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         }
 
         setValueSummary(KEY_BASEBAND_VERSION, "gsm.version.baseband");
+        setValueSummary(KEY_BOOTLOADER_VERSION, "ro.boot.bootloader");
         setValueSummary(KEY_EQUIPMENT_ID, PROPERTY_EQUIPMENT_ID);
         setStringSummary(KEY_DEVICE_CPU, DeviceInfoUtils.getDeviceProcessorInfo(getActivity()));
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL);
@@ -181,6 +190,21 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             setStringSummary(KEY_DEVICE_MEMORY, memInfo);
         } else {
             getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_MEMORY));
+	}
+
+        final String verifiedBootState = SystemProperties.get(PROPERTY_VERIFIED_BOOT_STATE);
+        final String verityMode = SystemProperties.get(PROPERTY_VERITY_MODE);
+        final int partitionSystemVerified = SystemProperties.getInt(PROPERTY_PARTITION_SYSTEM_VERIFIED, 0);
+        final int partitionVendorVerified = SystemProperties.getInt(PROPERTY_PARTITION_VENDOR_VERIFIED, 0);
+        if (("green".equals(verifiedBootState) || "yellow".equals(verifiedBootState)) &&
+                "enforcing".equals(verityMode) && partitionSystemVerified == 2 && partitionVendorVerified == 2) {
+            setStringSummary(KEY_VERIFIED_BOOT_STATUS, getString(R.string.verified_boot_status_enforcing));
+        }
+
+        final PersistentDataBlockManager manager = (PersistentDataBlockManager)
+                getSystemService(Context.PERSISTENT_DATA_BLOCK_SERVICE);
+        if (manager.getOemUnlockEnabled() || manager.getFlashLockState() != manager.FLASH_LOCK_LOCKED) {
+            setStringSummary(KEY_ANTI_THEFT_PROTECTION_STATUS, getString(R.string.anti_theft_protection_status_disabled));
         }
 
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
