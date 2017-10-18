@@ -45,6 +45,7 @@
   <string name="github_varund7726">https://github.com/varund7726</string>
   <string name="github_akhilnarang">https://github.com/akhilnarang</string>
   <string name="github_bdogg718k">https://github.com/bdogg718k</string>
+  <string name="github_apascual89">https://github.com/apascual89</string>
   <string name="rr">鏈結</string>
   <string name="rr_website_title">網站</string>
   <string name="rr_website_summary">取得更多關於 Resurrection Remix OS 的相關資訊</string>
@@ -64,9 +65,15 @@
   <string name="rr_ls_ui">鎖定使用者介面</string>
   <string name="rr_ls_security">安全性</string>
   <string name="updater_title">更新</string>
+  <string name="altankrk_summary">● 共同創始者 \n● 主要開發者 \n● 使用者體驗設計師 \n● 維護者</string>
   <string name="varun_summary">● 主要開發者 \n● 使用者體驗設計師 \n● 維護者</string>
+  <string name="andres_summary">● 開發者 \n● 維護者</string>
   <string name="akhil_summary">● 開發者 \n● 維護者 \n● 腳本主人</string>
   <string name="brian_summary">● 開發者 \n● 維護者</string>
+  <string name="christopher_kardas_summary">● 版主 \n● 編輯者 \n● 貢獻者</string>
+  <string name="matt_summary">● 版主 \n● 編輯者 \n● 貢獻者</string>
+  <string name="justen_summary">● 版主 \n● 編輯者 \n● 貢獻者</string>
+  <string name="support_team_title">版主標籤</string>
   <string name="device_maintainers_title">裝置和維護人員</string>
   <string name="device_maintainers_title_summary">列出裝置及該裝置的官方 RR-OS 的維護人員</string>
   <string name="maintainers_note_title">注意</string>
@@ -2209,7 +2216,7 @@
   <!-- In-call DND -->
   <string name="dnd_when_call_title">通話時請勿打擾</string>
   <string name="dnd_when_call_summary">通話時自動啟用 DND</string>
-  <string name="battery_light_allow_on_dnd_title">在勿打擾模式下啟用指示燈</string>
+  <string name="battery_light_allow_on_dnd_title">在勿擾模式下啟用指示燈</string>
   <string name="no_sim_cluster_switch_title">沒有 sim 卡時網路隱藏</string>
   <string name="no_sim_cluster_switch_summary">如果 Sim 卡的訂閱處於非活動狀態並被停用，則隱藏網路列。 如果 sim 未被停用，則此開關將不起作用</string>
   <string name="disable_no_sim_title">停用沒有 sim 卡圖示</string>
@@ -2260,9 +2267,9 @@
   <string name="status_bar_pulse_charging_battery_summary_on">所有電池樣式將顯示呼吸燈動畫。等待電池電量變化才能看到效果。</string>
   <string name="button_light_press_title">輕觸按鈕燈</string>
   <string name="button_light_press_summary_off">當檢測到螢幕輸入時，按鈕將隨時亮起。</string>
-  <string name="button_light_press_summary_on">僅有按下實體鍵，按鈕才會亮起。</string>
+  <string name="button_light_press_summary_on">只有按下實體鍵，按鈕才會亮起。</string>
   <string name="lockscreen_alpha">鎖定畫面透明度</string>
-  <string name="lockscreen_security_alpha">安全性認證畫面透明度</string>
+  <string name="lockscreen_security_alpha">鎖屏解鎖介面透明度</string>
   <!-- ANBI -->
   <string name="anbi_title">誤觸</string>
   <string name="anbi_summary">當觸控螢幕時，避免與導覽列互動</string>
@@ -2273,7 +2280,31 @@
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">阻止個別套件存取傳感器</string>
   <string name="sensor_block_summary">阻止應用程式存取某些感應器來省電</string>
+  <!-- Burn in protection -->
+  <string name="burnin_protection_title">螢幕烙印保護</string>
+  <string name="burnin_protection_summary">定時移動螢幕上的固定項目，以避免在螢幕上出現烙印</string>
   <!-- Qs easy tile add -->
   <string name="single_tap_tile_add_title">簡易圖塊新增</string>
   <string name="single_tap_tile_add_summary">透過簡單地輕觸不用拖動，可以輕鬆地從快速設定自訂程式新增快速圖塊</string>
+  <!-- Color engine -->
+  <string name="theme_switch_palette">主要和強調顏色之間切換</string>
+  <string name="theme_title">顏色引擎</string>
+  <string name="theme_summary">為目前的主題選擇不同的顏色</string>
+  <string name="theme_accent_color">強調顏色</string>
+  <string name="theme_primary_color">主要/背景顏色</string>
+  <string name="theme">主題</string>
+  <string name="oms_enabled">主題模式不可用，因為目前已安裝底層主題重疊。請移除主題重疊 (無須停用)。</string>
+  <string name="red">紅色</string>
+  <string name="orange">琥珀色</string>
+  <string name="blue">藍綠</string>
+  <string name="green">綠色</string>
+  <string name="yellow">黃色</string>
+  <string name="purple">紫色</string>
+  <string name="pink">粉紅色</string>
+  <string name="dark">深色</string>
+  <string name="pixel">像素</string>
+  <string name="teal">預設</string>
+  <string name="cyan">青色</string>
+  <string name="grey">灰色</string>
+  <string name="default_string">預設</string>
 </resources>

@@ -45,6 +45,7 @@
   <string name="github_varund7726">https://github.com/varund7726</string>
   <string name="github_akhilnarang">https://github.com/akhilnarang</string>
   <string name="github_bdogg718k">https://github.com/bdogg718k</string>
+  <string name="github_apascual89">https://github.com/apascual89</string>
   <string name="rr">Liên kết</string>
   <string name="rr_website_title">Website</string>
   <string name="rr_website_summary">Xem thêm thông tin về Resurrection Remix OS</string>
@@ -64,9 +65,15 @@
   <string name="rr_ls_ui">Khóa giao diện người dùng</string>
   <string name="rr_ls_security">Bảo mật</string>
   <string name="updater_title">Cập nhật</string>
+  <string name="altankrk_summary">● Người đồng sáng lập \n● Người phát triển chính \n● Người thiết kế UX \n● Người duy trì</string>
   <string name="varun_summary">● Người đứng đầu phát triển \n● Người thiết kế UX \n● Người duy trì</string>
+  <string name="andres_summary">● Người phát triển \n● Người duy trì</string>
   <string name="akhil_summary">● Người phát triển \n● Người duy trì \n● Chủ bản thảo</string>
   <string name="brian_summary">● Người phát triển \n● Người duy trì</string>
+  <string name="christopher_kardas_summary">● Người điều hành \n● Người biên tập \n● Người đóng góp</string>
+  <string name="matt_summary">● Người điều hành \n● Người biên tập \n● Người đóng góp</string>
+  <string name="justen_summary">● Người điều hành \n● Người biên tập \n● Người đóng góp</string>
+  <string name="support_team_title">Thẻ Người Điều Hành</string>
   <string name="device_maintainers_title">Các thiết bị và người duy trì</string>
   <string name="device_maintainers_title_summary">Danh sách các thiết bị và người duy trì RR-OS chính thức</string>
   <string name="maintainers_note_title">Chú ý</string>
@@ -767,7 +774,7 @@
   <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Loại bỏ mọi %1$s trong danh sách sẽ tắt lớp bánh thứ hai hoàn toàn.</string>
   <string name="shortcut_picker_choose_longpress_action">Chọn hành động khi nhấn giữ:</string>
   <string name="shortcut_picker_choose_new_action">Chọn hành động mới:</string>
-  <string name="shortcut_picker_reassign_action">Gán hành động:</string>
+  <string name="shortcut_picker_reassign_action">Gán lại hành động:</string>
   <string name="shortcut_picker_choose_action">Chọn hành động:</string>
   <string name="shortcut_picker_applications_title">Ứng dụng</string>
   <string name="shortcut_picker_activities_title">Hoạt động</string>
@@ -807,7 +814,7 @@
   <string name="flipboard">Flipboard</string>
   <string name="foursquare">Foursquare</string>
   <string name="firefox">Firefox</string>
-  <string name="googlebuzz">Google xu hướng</string>
+  <string name="googlebuzz">Google Buzz</string>
   <string name="googledocs">Google tài liệu</string>
   <string name="googlewallet">Google ví</string>
   <string name="line">Line</string>
@@ -984,7 +991,7 @@
   <string name="navigation_bar_left_summary">Đặt thanh điều hướng ở cạnh bên trái của màn hình trong chế độ nằm ngang</string>
   <string name="navigation_bar_arrow_keys_title">Hiển thị phím mũi tên trong khi nhập liệu</string>
   <string name="navigation_bar_arrow_keys_summary">Hiển thị các nút trái và bên phải con trỏ trong khi gõ. Ghi đè bộ chuyển IME.</string>
-  <string name="navigation_bar_recents_title">Hành động bấm giữ phím Recents</string>
+  <string name="navigation_bar_recents_title">Hành động bấm giữ phím Gần đây</string>
   <!-- Power menu -->
   <string name="power_menu_title">Trình đơn nguồn</string>
   <string name="power_menu_reboot_title">Trình đơn Khởi động lại</string>
@@ -1440,7 +1447,7 @@
   <!-- Circle app bar -->
   <string name="category_app_circle_bar_title">Trình khởi chạy ứng dụng</string>
   <string name="app_circle_bar_title">Thanh vòng tròn ứng dụng</string>
-  <string name="app_circle_bar_summary">Hiện trình khởi chạy ứng dụng hình tròn sau khi chạm vào cạnh phải của màn hình</string>
+  <string name="app_circle_bar_summary">Hiện trình vòng tròn khởi chạy ứng dụng sau khi chạm vào cạnh phải của màn hình</string>
   <string name="app_circle_bar_included_apps_title">Bao gồm các ứng dụng</string>
   <string name="app_circle_bar_included_apps_summary">Các ứng dụng sẽ hiển thị trong thanh vòng tròn ứng dụng</string>
   <string name="trigger_width_title">Độ rộng kích hoạt</string>
@@ -1511,10 +1518,10 @@
   <string name="fling_long_left_press">Nhấn giữ bên trái</string>
   <string name="long_swipe_portrait_title">Chiều dọc</string>
   <string name="long_swipe_landscape_title">Chiều ngang</string>
-  <string name="portrait_right_swipe_title">Vuốt bên phải ở chiều dọc</string>
-  <string name="portrait_left_swipe_title">Vuốt bên trái ở chiều dọc</string>
-  <string name="landscape_right_swipe_title">Vuốt bên phải ở chiều ngang</string>
-  <string name="landscape_left_swipe_title">Vuốt bên trái ở chiều ngang</string>
+  <string name="portrait_right_swipe_title">Vuốt dọc bên phải</string>
+  <string name="portrait_left_swipe_title">Vuốt dọc bên trái</string>
+  <string name="landscape_right_swipe_title">Vuốt ngang bên phải</string>
+  <string name="landscape_left_swipe_title">Vuốt ngang bên trái</string>
   <string name="vertical_up_swipe_title">Vuốt dọc lên</string>
   <string name="vertical_down_swipe_title">Vuốt dọc xuống</string>
   <string name="up_swipe_title">Vuốt lên</string>
@@ -2273,7 +2280,31 @@
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Cảm biến chặn mỗt gói</string>
   <string name="sensor_block_summary">Chặn quyền truy cập vào một số cảm biến cho một số ứng dụng để tiết kiệm pin.</string>
+  <!-- Burn in protection -->
+  <string name="burnin_protection_title">Bảo vệ khỏi hiện tượng lưu ảnh, bóng mờ</string>
+  <string name="burnin_protection_summary">Định kỳ di chuyển các mục được hiển thị vĩnh viễn trên màn hình để tránh bị màn hình quá mức trong khu vực đó</string>
   <!-- Qs easy tile add -->
   <string name="single_tap_tile_add_title">Thêm gạch đơn giản</string>
   <string name="single_tap_tile_add_summary">Thêm gạch nhanh chóng dễ dàng từ trình tùy chỉnh cài đặt nhanh đơn giản bằng cách gõ vào chúng thay vì kéo chúng</string>
+  <!-- Color engine -->
+  <string name="theme_switch_palette">Chuyển đổi giữa màu sắc chính và màu nổi bật</string>
+  <string name="theme_title">Công cụ màu</string>
+  <string name="theme_summary">Chọn các màu sắc khác nhau cho các chủ đề hiện tại của bạn</string>
+  <string name="theme_accent_color">Màu nổi bật</string>
+  <string name="theme_primary_color">Màu chính/màu nền</string>
+  <string name="theme">Chủ đề</string>
+  <string name="oms_enabled">Chế độ chủ đề không khả dụng vì lớp phủ Substratum hiện đang được cài đặt.Hãy GỠ CÀI ĐẶT lớp phủ chủ đề (không tắt).</string>
+  <string name="red">Đỏ</string>
+  <string name="orange">Hổ phách</string>
+  <string name="blue">Lục lam</string>
+  <string name="green">Xanh lá</string>
+  <string name="yellow">Vàng</string>
+  <string name="purple">Tím</string>
+  <string name="pink">Hồng</string>
+  <string name="dark">Tối</string>
+  <string name="pixel">Pixel</string>
+  <string name="teal">Mặt định</string>
+  <string name="cyan">Xanh lá mạ</string>
+  <string name="grey">Xám</string>
+  <string name="default_string">Mặc định</string>
 </resources>
