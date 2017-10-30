@@ -2307,4 +2307,7 @@
   <string name="cyan">Ціан</string>
   <string name="grey">Сірий</string>
   <string name="default_string">За замовчуванням</string>
+  <!-- MTP Dirty Hack -->
+  <string name="enable_mtp_dirtyhack_title">MTP замість Зарядки</string>
+  <string name="enable_mtp_dirtyhack_summary">Увімкнути MTP замість Зарядки при підключенні до ПК</string>
 </resources>
