@@ -2554,4 +2554,12 @@
     <!-- MTP Dirty Hack -->
     <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
     <string name="enable_mtp_dirtyhack_summary">Enable MTP instead Charging after connect to PC</string>
+	
+	<!-- API2 Switch -->
+    <string name="hal3_enabled_title">Enable API2</string>
+    <string name="hal3_enabled_summary">Reboot is required for changes to take effect</string>
+    <string name="dialog_reboot_required">Reboot required</string>
+    <string name="dialog_reboot_required_summary">A reboot is required for the changes to take effect!</string>
+    <string name="reboot_now">Reboot now</string>
+    <string name="reboot_later">Reboot later</string>
 </resources>
