@@ -422,12 +422,6 @@
                 android:key="background_check"
                 android:title="@string/background_check_pref" />
         -->
-		
-        <SwitchPreference
-         android:key="hal3_enabled"
-         android:title="@string/hal3_enabled_title"
-         android:summary="@string/hal3_enabled_summary"
-         android:defaultValue="false" />
 
         <SwitchPreference
             android:key="show_all_anrs"
