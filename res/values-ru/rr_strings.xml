@@ -1087,7 +1087,7 @@
   <string name="smart_pulldown_none_summary">Открывать панель быстрых настроек когда уведомления отсутствуют</string>
   <string name="smart_pulldown_off">Выключить</string>
   <string name="smart_pulldown_none">Нет уведомлений</string>
-  <string name="smart_pulldown_dismissable">Нет неудаляемых</string>
+  <string name="smart_pulldown_dismissable">Нет удаляемых</string>
   <string name="smart_pulldown_ongoing">Нет текущих</string>
   <!-- Clock and date immersive recents-->
   <string name="recents_full_screen_clock_title">Показывать часы</string>
