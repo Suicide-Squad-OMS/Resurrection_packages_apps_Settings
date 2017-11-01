@@ -140,7 +140,7 @@
   <string name="rr_dash_board_title">Главное меню настроек</string>
   <string name="rr_fp_title">Настройки сканера отпечатка пальцев</string>
   <string name="recents_type_title">Тип меню недавних приложений</string>
-  <string name="recents_stock">Заводской AOSP</string>
+  <string name="recents_stock">Оригинал AOSP</string>
   <string name="recents_omniswitch">OmniSwitch</string>
   <string name="recents_grid">Сетка</string>
   <string name="recents_slim">Slim</string>
