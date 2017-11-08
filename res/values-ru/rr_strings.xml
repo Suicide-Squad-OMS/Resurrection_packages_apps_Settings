@@ -1273,11 +1273,11 @@
   <string name="clear_animation_style">Анимация очистки приложений</string>
   <string name="button1">По умолчанию</string>
   <string name="button2">Квадратный флажок</string>
-  <string name="button3">Graph</string>
+  <string name="button3">График</string>
   <string name="button4">Вертикальные линии 1</string>
   <string name="button5">Вертикальные линии 2</string>
   <string name="button6">Буфер обмена </string>
-  <string name="button7">Paint </string>
+  <string name="button7">Валик</string>
   <string name="button8">Горизонтальные линии</string>
   <string name="button9">Круговой флажок </string>
   <string name="button10">Удаление смахиванием</string>
@@ -1294,11 +1294,11 @@
   <string name="button21">База данных +</string>
   <string name="button22">Суживающиеся стрелки</string>
   <string name="button23">Googlе</string>
-  <string name="button24"> База данных -</string>
+  <string name="button24">База данных -</string>
   <string name="button25">Последовательный куб</string>
   <string name="button26">Таймер</string>
   <string name="button27">Resurrection</string>
-  <string name="button28">Android (Stock)</string>
+  <string name="button28">Android (оригинал)</string>
   <string name="button29">Resurrection Lollipop</string>
   <string name="button30">Android N</string>
   <string name="animation0">Переворот</string>
