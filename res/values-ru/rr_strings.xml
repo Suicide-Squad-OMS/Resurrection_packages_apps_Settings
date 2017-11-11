@@ -104,9 +104,9 @@
   <string name="changelog_version">Версия</string>
   <!--RR Configurations-->
   <string name="fab_updates">Обновления</string>
-  <string name="fab_restartui">Перезапустить пользовательский интерфейс</string>
-  <string name="fab_reset">Сброс</string>
-  <string name="fab_about">О RR-OS</string>
+  <string name="fab_restartui">Перезапустить интерфейс</string>
+  <string name="fab_reset">Сбросить настройки</string>
+  <string name="fab_about">О Resurrection Remix OS</string>
   <string name="fab_layout">Обновить расположение</string>
   <string name="fab_layout_update">Включить классическое расположение</string>
   <string name="fab_layout_toggle">Включить расположение по вкладкам</string>
