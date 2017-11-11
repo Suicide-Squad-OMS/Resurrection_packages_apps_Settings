@@ -979,7 +979,7 @@
   <string name="backlight_timeout_title">Длительность подсветки</string>
   <string name="backlight_timeout_unlimited">Не отключать</string>
   <string name="backlight_summary_disabled">Выключена</string>
-  <string name="backlight_summary_enabled_with_timeout">Включена на <xliff:g id="timeout">%s</xliff:g></string>
+  <string name="backlight_summary_enabled_with_timeout">Включена на <xliff:g id="timeout">%s</xliff:g> сeкунд(ы)</string>
   <string name="backlight_summary_enabled">Включена всегда</string>
   <!-- Buttons - Enable navbar -->
   <string name="disable_navkeys_title">Выключить аппаратные кнопки</string>
