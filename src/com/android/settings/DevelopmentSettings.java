@@ -24,8 +24,10 @@ import android.app.AlertDialog;
 import android.app.AppOpsManager;
 import android.app.AppOpsManager.PackageOps;
 import android.app.Dialog;
+import android.app.DialogFragment;
 import android.app.admin.DevicePolicyManager;
 import android.app.backup.IBackupManager;
+import android.app.FragmentManager;
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -249,6 +251,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final int[] MOCK_LOCATION_APP_OPS = new int[] {AppOpsManager.OP_MOCK_LOCATION};
 
+    private static final String HAL3_ENABLED = "hal3_enabled";
+    private static final String PROP_HAL3_ENABLED = "persist.camera.HAL3.enabled";
+
     private IWindowManager mWindowManager;
     private IBackupManager mBackupManager;
     private IWebViewUpdateService mWebViewUpdateService;
@@ -362,6 +367,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private boolean mLogpersistCleared;
     private Dialog mLogpersistClearDialog;
 
+    private SwitchPreference mHAL3Enabled;
+
+    private static FragmentManager mFragmentManager;
+
     public DevelopmentSettings() {
         super(UserManager.DISALLOW_DEBUGGING_FEATURES);
     }
@@ -388,6 +397,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mUm = (UserManager) getSystemService(Context.USER_SERVICE);
 
         mWifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+
+        mFragmentManager = getFragmentManager();
 
         setIfOnlyAvailableForAdmins(true);
         if (isUiRestricted() || !Utils.isDeviceProvisioned(getActivity())) {
@@ -582,6 +593,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
         mDevelopmentTools = (PreferenceScreen) findPreference(DEVELOPMENT_TOOLS);
         mAllPrefs.add(mDevelopmentTools);
+
+        mHAL3Enabled = (SwitchPreference) findPreference(HAL3_ENABLED);
+        mHAL3Enabled.setChecked(SystemProperties.getBoolean(PROP_HAL3_ENABLED, false));
+        mHAL3Enabled.setOnPreferenceChangeListener(this);
     }
 
     private ListPreference addListPreference(String prefKey) {
@@ -1975,7 +1990,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private void writeAnimationScaleOption(int which, AnimationScalePreference pref,
             Object newValue) {
         try {
-            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 1;
+            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 0.7f;
             mWindowManager.setAnimationScale(which, scale);
             updateAnimationScaleValue(which, pref);
         } catch (RemoteException e) {
@@ -2411,6 +2426,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 writeRootAccessOptions(newValue);
             }
             return true;
+        } else if (HAL3_ENABLED.equals(preference.getKey())) {
+            SystemProperties.set(PROP_HAL3_ENABLED, (Boolean) newValue ? "1" : "0");
+            confirmRebootChange();
+            return true;
         }
         return false;
     }
@@ -2683,5 +2702,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         UserHandle userHandle = UserHandle.of(UserHandle.myUserId());
         return !(mUm.hasBaseUserRestriction(UserManager.DISALLOW_OEM_UNLOCK, userHandle)
                 || mUm.hasBaseUserRestriction(UserManager.DISALLOW_FACTORY_RESET, userHandle));
+    }
+
+    private static void confirmRebootChange() {
+        DialogFragment newFragment = new confirmRebootChangeDialog();
+        newFragment.show(mFragmentManager, "hal3");
     }
 }

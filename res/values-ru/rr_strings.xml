@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="rr_mod_version">Версия RR-OS</string>
+  <string name="rr_mod_version">Версия Resurrection Remix OS</string>
   <string name="build_date">Дата сборки</string>
   <string name="mod_version_default">По умолчанию</string>
   <!-- General -->
@@ -104,9 +104,9 @@
   <string name="changelog_version">Версия</string>
   <!--RR Configurations-->
   <string name="fab_updates">Обновления</string>
-  <string name="fab_restartui">Перезапустить пользовательский интерфейс</string>
-  <string name="fab_reset">Сброс</string>
-  <string name="fab_about">О RR-OS</string>
+  <string name="fab_restartui">Перезапустить интерфейс</string>
+  <string name="fab_reset">Сбросить настройки</string>
+  <string name="fab_about">О Resurrection Remix OS</string>
   <string name="fab_layout">Обновить расположение</string>
   <string name="fab_layout_update">Включить классическое расположение</string>
   <string name="fab_layout_toggle">Включить расположение по вкладкам</string>
@@ -140,7 +140,7 @@
   <string name="rr_dash_board_title">Главное меню настроек</string>
   <string name="rr_fp_title">Настройки сканера отпечатка пальцев</string>
   <string name="recents_type_title">Тип меню недавних приложений</string>
-  <string name="recents_stock">Заводской AOSP</string>
+  <string name="recents_stock">Оригинал AOSP</string>
   <string name="recents_omniswitch">OmniSwitch</string>
   <string name="recents_grid">Сетка</string>
   <string name="recents_slim">Slim</string>
@@ -1087,7 +1087,7 @@
   <string name="smart_pulldown_none_summary">Открывать панель быстрых настроек когда уведомления отсутствуют</string>
   <string name="smart_pulldown_off">Выключить</string>
   <string name="smart_pulldown_none">Нет уведомлений</string>
-  <string name="smart_pulldown_dismissable">Нет неудаляемых</string>
+  <string name="smart_pulldown_dismissable">Нет удаляемых</string>
   <string name="smart_pulldown_ongoing">Нет текущих</string>
   <!-- Clock and date immersive recents-->
   <string name="recents_full_screen_clock_title">Показывать часы</string>
@@ -1273,11 +1273,11 @@
   <string name="clear_animation_style">Анимация очистки приложений</string>
   <string name="button1">По умолчанию</string>
   <string name="button2">Квадратный флажок</string>
-  <string name="button3">Graph</string>
+  <string name="button3">График</string>
   <string name="button4">Вертикальные линии 1</string>
   <string name="button5">Вертикальные линии 2</string>
   <string name="button6">Буфер обмена </string>
-  <string name="button7">Paint </string>
+  <string name="button7">Валик</string>
   <string name="button8">Горизонтальные линии</string>
   <string name="button9">Круговой флажок </string>
   <string name="button10">Удаление смахиванием</string>
@@ -1294,11 +1294,11 @@
   <string name="button21">База данных +</string>
   <string name="button22">Суживающиеся стрелки</string>
   <string name="button23">Googlе</string>
-  <string name="button24"> База данных -</string>
+  <string name="button24">База данных -</string>
   <string name="button25">Последовательный куб</string>
   <string name="button26">Таймер</string>
   <string name="button27">Resurrection</string>
-  <string name="button28">Android (Stock)</string>
+  <string name="button28">Android (оригинал)</string>
   <string name="button29">Resurrection Lollipop</string>
   <string name="button30">Android N</string>
   <string name="animation0">Переворот</string>
@@ -1712,9 +1712,8 @@
   <string name="show_su_indicator_title">Индикатор суперпользователя</string>
   <string name="show_su_indicator_summary">Показывать индикатор суперпользователя, когда сессия активна</string>
   <!-- Pie -->
-  <string name="pie_enable_title">Включить PIE-управление</string>
-  <string name="pie_settings">Настройки PIE</string>
-  <string name="pie_enable_title">Включить PIE-управление</string>
+  <string name="pa_pie_control_title">PIE управление</string>
+  <string name="pie_enable_title">Включить PIE управление</string>
   <string name="pie_settings_summary">Настройте PIE как вам нравится</string>
   <string name="pie_theme_mode_title">Тема</string>
   <string name="pie_auto">Автоматически</string>
@@ -2294,17 +2293,27 @@
   <string name="theme_primary_color">Основной/фоновый цвет</string>
   <string name="theme">Тема</string>
   <string name="oms_enabled">Режимы темы недоступны, потому что установлено наслоение из Substratum. Пожалуйста, удалите наслоение.</string>
-  <string name="red">Red</string>
-  <string name="orange">Amber</string>
-  <string name="blue">Teal</string>
-  <string name="green">Green</string>
-  <string name="yellow">Yellow</string>
-  <string name="purple">Purple</string>
-  <string name="pink">Pink</string>
-  <string name="dark">Dark</string>
-  <string name="pixel">Pixel</string>
-  <string name="teal">По умолчанию</string>
-  <string name="cyan">Cyan</string>
-  <string name="grey">Grey</string>
+  <string name="red">Красный</string>
+  <string name="orange">Оранжевый</string>
+  <string name="blue">Бирюзовый</string>
+  <string name="green">Зеленый</string>
+  <string name="yellow">Желтый</string>
+  <string name="purple">Фиолетовый</string>
+  <string name="pink">Розовый</string>
+  <string name="dark">Темный</string>
+  <string name="pixel">Пиксель</string>
+  <string name="teal">Синий</string>
+  <string name="cyan">Голубой</string>
+  <string name="grey">Серый</string>
   <string name="default_string">По умолчанию</string>
+  <!-- MTP Dirty Hack -->
+  <string name="enable_mtp_dirtyhack_title">MTP вместо Зарядки</string>
+  <string name="enable_mtp_dirtyhack_summary">Включить MTP вместо Зарядки при подключении к ПК</string>
+  <!-- HAL3 Switch -->
+  <string name="hal3_enabled_title">Включение камера HAL3</string>
+  <string name="hal3_enabled_summary">Для работы нужно переключить SElinux в Разрешающий</string>
+  <string name="dialog_reboot_required">Требуется перезагрузка</string>
+  <string name="dialog_reboot_required_summary">Перезагрузка необходима для того, чтобы изменения вступили в силу!</string>
+  <string name="reboot_now">Перезагрузить сейчас</string>
+  <string name="reboot_later">Перезагрузить позже</string>
 </resources>

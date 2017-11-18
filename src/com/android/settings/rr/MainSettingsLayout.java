@@ -97,7 +97,6 @@ public class MainSettingsLayout extends SettingsPreferenceFragment {
         mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
         mSettingsObserver = new SettingsObserver(new Handler());
         mInterceptorFrame = (FrameLayout) view.findViewById(R.id.fl_interceptor);
-        FloatingActionButton mFab1 = (FloatingActionButton) view.findViewById(R.id.fab_event);
         FloatingActionButton mFab2 = (FloatingActionButton) view.findViewById(R.id.fab_restart);
         FloatingActionButton mFab3 = (FloatingActionButton) view.findViewById(R.id.fab_reset);
         FloatingActionButton mFab4 = (FloatingActionButton) view.findViewById(R.id.fab_info);
@@ -121,15 +120,6 @@ public class MainSettingsLayout extends SettingsPreferenceFragment {
 
         boolean isShowing =   Settings.System.getInt(resolver,
         Settings.System.RR_OTA_FAB, 1) == 1;
-
-        mFab1.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-             Intent fabIntent = new Intent();
-             fabIntent.setClassName("com.resurrection.ota", "com.resurrection.ota.MainActivity");
-             startActivity(fabIntent);
-             }
-        });
 
         mFab2.setOnClickListener(new View.OnClickListener() {
              @Override

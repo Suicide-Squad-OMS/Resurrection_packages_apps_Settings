@@ -2307,4 +2307,14 @@
   <string name="cyan">Ціан</string>
   <string name="grey">Сірий</string>
   <string name="default_string">За замовчуванням</string>
+  <!-- MTP Dirty Hack -->
+  <string name="enable_mtp_dirtyhack_title">MTP замість Зарядки</string>
+  <string name="enable_mtp_dirtyhack_summary">Увімкнути MTP замість Зарядки при підключенні до ПК</string>
+  <!-- API2 Switch -->
+  <string name="hal3_enabled_title">Увімкнення камери HAL3</string>
+  <string name="hal3_enabled_summary">Для роботи потрібно переключити SElinux в Дозволяючий</string>
+  <string name="dialog_reboot_required">Потрібне перезавантаження</string>
+  <string name="dialog_reboot_required_summary">Перезавантаження необхідне для того, щоб зміни набрали сили!</string>
+  <string name="reboot_now">Перезавантажити зараз</string>
+  <string name="reboot_later">Перезавантажити пізніше</string>
 </resources>
